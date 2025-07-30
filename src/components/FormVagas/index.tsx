@@ -1,5 +1,7 @@
 import { FormEvent, useState } from 'react'
-import { ButtonSearch, Campo, Form } from './styles'
+
+import FormSearch, { ButtonSearch, InputSearch } from './styles'
+import { Container } from '../../styles'
 
 type Props = {
   aoPesquisar: (termo: string) => void
@@ -14,16 +16,14 @@ const FormVagas = ({ aoPesquisar }: Props) => {
   }
 
   return (
-    <Form>
-      <Campo
+    <FormSearch onSubmit={aoEnviarForm}>
+      <InputSearch
         placeholder="Front-end, fullstack, node, design"
         onChange={(e) => setTermo(e.target.value)}
         type="search"
       />
-      <ButtonSearch type="submit">
-        Pesquisar
-      </ButtonSearch>
-    </Form>
+      <ButtonSearch type="submit">Pesquisar</ButtonSearch>
+    </FormSearch>
   )
 }
 export default FormVagas

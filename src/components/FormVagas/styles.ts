@@ -1,26 +1,29 @@
 import styled from 'styled-components'
+import { Cores } from '../../styles'
 
-export const Form = styled.form`
+const FormSearch = styled.form`
   display: grid;
   grid-template-columns: 1fr auto;
-  background-color: #f9f5e7;
+  background-color: ${Cores.corSecundaria};
   padding: 32px;
   border-radius: 12px;
   margin-top: 40px;
 `
 
 export const ButtonSearch = styled.button`
-  background-color: #a7727d;
-  border: 1px solid #a7727d;
+  background-color: ${Cores.corPrincipal};
+  border: 1px solid ${Cores.corPrincipal};
   height: 40px;
   padding: 0 16px;
   font-size: 18px;
-  color: #f9f5e7;
+  color: ${Cores.corSecundaria};
   margin-left: 8px;
   cursor: pointer;
 `
 
-export const Campo = styled.input`
+export const InputSearch = styled.input`
   padding: 0 16px;
-  outline-color: #a7727d;
+  outline-color: ${Cores.corPrincipal};
 `
+
+export default FormSearch

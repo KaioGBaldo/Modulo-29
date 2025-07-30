@@ -1,33 +1,35 @@
 import styled from 'styled-components'
+import { Cores } from '../../styles'
 
-export const VagaStyled = styled.li`
-  border: 1px solid #a7727d;
-  color: #f9f5e7;
+const VacanciesList = styled.ul`
+  border: 1px solid ${Cores.corPrincipal};
+  background-color: ${Cores.corSecundaria};
+  color: ${Cores.corPrincipal};
   padding: 16px;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
   border-radius: 8px;
 
-  &:hover {
-    background-color: #a7727d;
-    color:#f9f5e7 ;
+  :hover {
+    background-color: ${Cores.corPrincipal};
+    color: ${Cores.corSecundaria};
+  }
 
-    a {
-      border-color:#a7727d ;
-      background-color: #f9f5e7;
-      color: #a7727d;
-    }
+  :hover a {
+    border-color: ${Cores.corPrincipal};
+    background-color: ${Cores.corSecundaria};
+    color: ${Cores.corPrincipal};
   }
 `
 
-export const VagaTitle = styled.h3`
+export const VacanciesTitle = styled.h3`
   font-weight: bold;
   margin-bottom: 16px;
 `
 
-export const VagaLink = styled.a`
-  border-color: #f9f5e7;
-  background-color: #a7727d;
-  color: #f9f5e7;
+export const VacanciesLink = styled.a`
+  border-color: ${Cores.corSecundaria};
+  background-color: ${Cores.corPrincipal};
+  color: ${Cores.corSecundaria};
   display: inline-block;
   padding: 8px 16px;
   text-decoration: none;
@@ -37,7 +39,8 @@ export const VagaLink = styled.a`
   border-radius: 8px;
   text-align: center;
 
-  @media screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     display: block;
   }
 `
+export default VacanciesList

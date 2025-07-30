@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import { Cores } from '../../styles'
 
-export const Form = styled.form`
+const FormHero = styled.form`
   height: 360px;
   width: 100%;
   background-image: url('https://cdn.pixabay.com/photo/2018/08/10/15/45/woman-3597101_1280.jpg');
@@ -9,35 +10,34 @@ export const Form = styled.form`
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
-    heigth: auto;
+    @media (max-width: 768px) {
+    height: auto;
     padding: 24px 0;
   }
 
-  &::before {
+  ::before {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #a7727d;
+    background-color: ${Cores.corPrincipal};
     content: '';
     opacity: 0.7;
-  }
+    z-index: 1;
 
-  div {
-    position: relative;
-    color: #eee;
-  }
 `
 
-export const TitleHero = styled.h2`
+export const HeroTitle = styled.h2`
+  position: relative;
   font-family: Gloock, serif;
-  font-size: 48px;
+  font-size: 40px;
+  color: ${Cores.corSecundaria};
+  z-index: 2;
 
-  @media screen and (max-width: 768px) {
-    font-size: 32px;
+  @media (max-width: 768px) {
+    font-size: 24px;
   }
 `
 
-
+export default FormHero
