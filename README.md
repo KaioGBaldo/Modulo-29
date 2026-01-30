@@ -1,46 +1,41 @@
-# Getting Started with Create React App
+# 💼 EBAC Jobs - Styled Components & TypeScript Integration
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Uma plataforma de listagem de vagas de emprego desenvolvida com **React**, focada em demonstrar o poder do **CSS-in-JS**. O projeto utiliza **Styled Components** para criar uma interface elegante, modular e totalmente tipada com **TypeScript**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+# 📝 Resumo (Resume)
+Neste projeto, foquei na modernização da estilização de componentes React. Em vez de arquivos CSS tradicionais, utilizei a biblioteca **Styled Components** para escrever CSS diretamente no JavaScript, permitindo o uso de variáveis de tema dinâmicas e tipagem estrita para as propriedades de estilo. Implementei um sistema de **Global Styles** e um **Theme Provider** (via objetos de cores) para garantir que toda a aplicação siga uma identidade visual consistente e fácil de manter.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🚀 Tecnologias e Ferramentas (Tech Stack)
 
-### `npm test`
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Styled Components](https://img.shields.io/badge/Styled_Components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)](https://styled-components.com/)
+[![EditorConfig](https://img.shields.io/badge/EditorConfig-E0EFEF?style=for-the-badge&logo=editorconfig&logoColor=000)](https://editorconfig.org/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📋 Funcionalidades em Destaque
+* **CSS-in-JS (Styled Components):** Criação de componentes estilizados que facilitam a leitura e a manutenção do código, eliminando conflitos de classes CSS.
+* **Tipagem Estrita de Temas:** Uso de interfaces do TypeScript para garantir que as cores e propriedades do tema sejam usadas corretamente em toda a aplicação.
+* **Estilo Global:** Implementação do `createGlobalStyle` para reset de CSS e definição de fontes globais (Lato e Gloock) de forma centralizada.
+* **Layout Responsivo:** Uso de variáveis e media queries dentro dos componentes estilizados para garantir adaptabilidade em resoluções de até 1024px.
+* **Padronização de Código:** Uso de `.editorconfig` para garantir que o estilo de codificação (indentação, charset, etc.) seja idêntico em qualquer editor de texto.
+* **Componentização Limpa:** Separação clara entre os componentes de estrutura (`App.tsx`, `styles.ts`) e os componentes de interface (`Hero`, `Cabecalho`).
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# 👨‍💻 Sobre mim (About Me)
+Olá, meu nome é **Kaio**, tenho 22 anos. Como meu objetivo é o **Back-End com Python**, trabalhar com Styled Components me ajudou a entender a importância da **Padronização e Tematização**. No back-end, tratamos configurações globais de forma muito parecida com o que fiz aqui com o objeto `Cores`. Ter essa visão de como o front-end consome padrões de design me ajuda a construir APIs que entregam dados de forma mais inteligente para a interface.
 
-### `npm run eject`
+### Entre em contato (Contact me)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=3178C6)](https://linkedin.com/in/kaio-grativol-baldo-071a74150/)
+[![Instagram](https://img.shields.io/badge/Instagram-000?style=for-the-badge&logo=instagram&logoColor=3178C6)](https://www.instagram.com/kaiull__/)
+[![GitHub](https://img.shields.io/badge/Github-000?style=for-the-badge&logo=github&logoColor=3178C6)](https://github.com/SeuUsuarioAqui)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+*Projeto desenvolvido para consolidar o uso de TypeScript e CSS-in-JS em aplicações React modernas.*
